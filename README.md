@@ -1,4 +1,4 @@
-# Step by step instructions to benchmark baseline (minimap2) and OpenOmics minimap2 (mm2-fast) on c5.12xlarge and m6i.16xlarge instances of AWS
+# Step by step instructions to benchmark baseline (minimap2) and OpenOmics minimap2 (mm2-fast) on c5.12xlarge, c6i.16xlarge and m6i.16xlarge instances of AWS
 
 ## Step 1: Download datasets
 Download reference genome
@@ -64,7 +64,7 @@ Example command to run HG002 ONT dataset on c5.12xlarge
 ```sh
 ./mm2-fast -ax map-ont GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta.gz HG002_ONT.fastq -t 48 > mm2-fastoutput
 ```
-Example command to run HG002 ONT dataset on m6i.16xlarge
+Example command to run HG002 ONT dataset on c6i.16xlarge or m6i.16xlarge
 ```sh
 ./mm2-fast -ax map-ont GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta.gz HG002_ONT.fastq -t 64 > mm2-fastoutput
 ```
